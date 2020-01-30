@@ -26,12 +26,10 @@ class Geodesic:
             Size of each increment in proper time
         time : float
             Time of start (defaults to zero seconds)
-        a : ~astropy.units.m, optional
-            Spin factor of massive body. Should be less than half of schwarzschild radius.
-        q : ~astropy.units.C, optional
-            Charge on the massive body
-        parent : Body, optional
-            The parent object of the body.
+        metric : ~einsteinpy.metric.schwarzschild.Schwarzschild or ~einsteinpy.metric.kerr.Kerr or ~einsteinpy.metric.kerrnewman.KerrNewman
+        Metric of the spacetime in which geodesics are to be calculated.
+        Defaults to Schwarzschild.
+        
         """
         self.body = body
         self.attractor = body.parent
