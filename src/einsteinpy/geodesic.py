@@ -27,8 +27,8 @@ class Geodesic:
         time : float
             Time of start (defaults to zero seconds)
         metric : ~einsteinpy.metric.schwarzschild.Schwarzschild or ~einsteinpy.metric.kerr.Kerr or ~einsteinpy.metric.kerrnewman.KerrNewman
-        Metric of the spacetime in which geodesics are to be calculated.
-        Defaults to Schwarzschild.
+            Metric of the spacetime in which geodesics are to be calculated.
+            Defaults to Schwarzschild.
         
         """
         self.body = body
