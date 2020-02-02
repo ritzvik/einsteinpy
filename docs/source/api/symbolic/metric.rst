@@ -5,3 +5,5 @@ This module contains the class for defining a Metric belonging to any arbitrary 
 
 .. automodule:: einsteinpy.symbolic.metric
     :members:
+    :show-inheritance:
+    :inherited-members:
